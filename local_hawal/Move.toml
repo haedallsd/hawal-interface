@@ -1,0 +1,18 @@
+[package]
+name = "haedal"
+version = "0.0.1"
+edition = "2024"
+published-at = "0x8b4d553839b219c3fd47608a0cc3d5fcc572cb25d41b7df3833208586a8d2470"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "mainnet" }
+#Walrus = { git = "https://github.com/MystenLabs/walrus.git", subdir = "contracts/walrus", rev = "mainnet" }
+#WAL = { git = "https://github.com/MystenLabs/walrus.git", subdir = "contracts/wal", rev = "mainnet" }
+
+Walrus = { local = "./local_wal/walrus" }
+WAL = { local = "./local_wal/wal" }
+
+[addresses]
+haedal = "0x8b4d553839b219c3fd47608a0cc3d5fcc572cb25d41b7df3833208586a8d2470"
+sui = "0x2"
+walrus = "0xfdc88f7d7cf30afab2f82e8380d11ee8f70efb90e863d1de8616fae1bb09ea77"
